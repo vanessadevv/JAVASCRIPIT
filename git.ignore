@@ -1,0 +1,42 @@
+onst preco = Number(prompt("Digite o valor do Produto"));
+const nVezes = Number(prompt("Digite o número de vezes que deseja parcelar: "));
+const parcela = preco / nVezes;
+
+if (nVezes == 0) {
+  let desconto = preco * 0.025;
+  let total = preco - desconto;
+  console.log("Você optou por comprar à vista. Ganhou um desconto de 2.5%");
+  console.log("");
+  console.log("Preço da tabela R$", preco);
+  console.log("Numero de parcelas: ", nVezes);
+  console.log("Valor de cada parcela R$: ", parcela);
+  console.log("Total a pagar R$:", total);
+} else if (nVezes >= 2 && nVezes <= 5) {
+  parcela == preco / nVezes, (total = preco);
+  console.log(preco, " Sem desconto ou acrescimo");
+  console.log("");
+  console.log("Preço da tabela R$", preco);
+  console.log("Numero de parcelas: ", nVezes);
+  console.log("Valor de cada parcela R$: ", parcela);
+  console.log("Total a pagar R$: ", total);
+} else if (nVezes >= 6 && nVezes <= 10) {
+  let juros = preco * 0.06;
+  let total = preco + juros;
+  parcela == preco / nVezes;
+  console.log("juros de 6% sobre o preço de tabela.");
+  console.log("");
+  console.log("Preço da tabela R$", preco);
+  console.log("Numero de parcelas: ", nVezes);
+  console.log("Valor de cada parcela R$: ", parcela);
+  console.log("Total a pagar R$: ", total);
+} else if (nVezes >= 11 && nVezes <= 15) {
+  let juros = preco * 0.13;
+  let total = preco + juros;
+  parcela == preco / nVezes;
+  console.log("juros de 13% sobre o preço de tabela.");
+  console.log("");
+  console.log("Preço da tabela R$", preco);
+  console.log("Numero de parcelas: ", nVezes);
+  console.log("Valor de cada parcela R$: ", parcela);
+  console.log("Total a pagar R$: ", total);
+}
